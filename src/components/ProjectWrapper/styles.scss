@@ -1,0 +1,10 @@
+@import "/src/var";
+
+.card-container {
+  @include layout-flex(column, space-evenly);
+  gap: 3rem;
+
+  li {
+    padding: $spacing;
+  }
+}

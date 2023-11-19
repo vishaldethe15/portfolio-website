@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@400;500;600;700&display=swap");
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+// font
+$title-font: "Bebas Neue", sans-serif;
+$text-font: "Quicksand", sans-serif;
+
+//$links:
+
+// colors
+$bg-primary: #080808;
+$bg-secondary: #333533;
+$accent: #ff8811; //#9381ff;
+$text-primary: #fafaff;
+$text-secondary: #5e605e;
+$overlay-clr: linear-gradient(90deg, $accent, rgba(8, 8, 8, 0.7) 57%);
+$bg-card: hsla(0, 0%, 10%, 0.8); //hsla(120, 1%, 37%, 0.7);
+
+$z-index: 10;
+$transition: ease-in-out 0.2s;
+$spacing: 0.5rem;
+
+// mixins
+
+@mixin layout-flex($dir: row, $jus) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $jus;
+}
+
+@mixin layout-grid($columns, $gap, $autoRows: false) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-gap: $gap;
+
+  @if $autoRows {
+    grid-auto-rows: 1fr;
+  }
+}
+
+@mixin cta($clr, $hover: false) {
+  border: 2px solid $clr;
+  padding: $spacing 1rem;
+  box-shadow: inset 0 0 0 0 $clr;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+
+  @if $hover {
+    &:hover {
+      color: $text-primary;
+      border: 2px solid $clr;
+      box-shadow: inset 20rem 0 0 0 $clr;
+    }
+  }
+}
+
+@mixin hover {
+  transition: $transition;
+  &:hover {
+    color: $text-primary;
+    //text-shadow: $accent 1px 0 10px;
+  }
+}
+
+// Mobile devices (up to 767px)
+$mobile: 767px;
+
+// Tablet devices (768px to 1023px)
+$tablet: 768px;
+$tablet-max: 1023px;
+
+// Desktop devices (1024px and above)
+$desktop: 1024px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) and (max-width: #{$tablet-max}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}

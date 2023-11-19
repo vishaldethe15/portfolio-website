@@ -1,0 +1,51 @@
+@import "/src/var";
+
+.title {
+  margin-top: 3rem;
+  h1 {
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-family: $title-font;
+    font-weight: 800;
+
+    text-wrap: balance;
+  }
+
+  .job-title {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-family: $title-font;
+    font-weight: 800;
+    color: $accent;
+    //background: $overlay-clr;
+  }
+}
+
+@include tablet {
+  .title {
+    h1 {
+      font-size: 6rem;
+      text-wrap: balance;
+      .dot {
+        font-size: 3rem;
+        color: $accent;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .title {
+    h1 {
+      font-size: 4rem;
+      text-wrap: balance;
+      .dot {
+        font-size: 3rem;
+        color: $accent;
+      }
+    }
+    .job-title {
+      font-size: 3rem;
+    }
+  }
+}

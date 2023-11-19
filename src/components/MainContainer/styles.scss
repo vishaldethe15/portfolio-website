@@ -1,0 +1,33 @@
+@import "/src/var";
+
+.main-wrapper {
+  margin-left: 4rem;
+  width: 85%;
+  height: inherit;
+  @include layout-flex(column, flex-start);
+  align-items: flex-start;
+  gap: 5rem;
+}
+
+@include mobile {
+  .main-wrapper {
+    margin-left: 0;
+    padding: $spacing;
+    width: 100%;
+    @include layout-flex(column, flex-start);
+    align-items: center;
+    gap: 5rem;
+  }
+}
+
+@include tablet {
+  .main-wrapper {
+    align-self: center;
+    margin-left: 0;
+    padding: $spacing;
+    width: 80%;
+    @include layout-flex(column, flex-start);
+    align-items: center;
+    gap: 5rem;
+  }
+}

@@ -1,0 +1,125 @@
+@import "./var";
+
+// Global Reset
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $text-font;
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background-color: $bg-secondary;
+}
+
+html {
+  /* Define the scrollbar width and track color */
+  ::-webkit-scrollbar {
+    width: 0.5rem; /* Width of the scrollbar */
+  }
+
+  /* Define the scrollbar track (the background) */
+  ::-webkit-scrollbar-track {
+    background: $bg-primary; /* Background color of the track */
+  }
+
+  /* Define the scrollbar thumb (the draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background: $bg-secondary; /* Color of the thumb */
+  }
+
+  // /* On hover, style the thumb differently */
+  // ::-webkit-scrollbar-thumb:hover {
+  //   background: #555; /* Color of the thumb on hover */
+  // }
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: $text-primary;
+}
+
+// Remove list styles (optional)
+ul,
+ol {
+  list-style: none;
+}
+
+// Typography Reset
+body {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $text-primary;
+  background: $bg-primary;
+  overflow-x: hidden;
+}
+
+// Remove default button styles
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+// Remove input and textarea styles (optional)
+
+input,
+textarea {
+  appearance: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+// Responsive Images (optional)
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+}
+
+// Reset Typography
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+}
+
+// Adjust heading sizes if needed
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+.dot {
+  font-size: 5rem;
+  color: $accent;
+}
+.key-points {
+  color: $text-primary;
+  text-transform: capitalize;
+  font-weight: 500;
+}
