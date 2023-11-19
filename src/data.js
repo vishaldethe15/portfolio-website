@@ -40,7 +40,7 @@ export const projectList = [
   {
     title: "Gears Store",
 
-    img: "/src/assets/store-long.png",
+    img: "/store-long.png",
 
     techStack: ["reactjs", "nodejs", "express.js", "monogodb", "auth"],
 
@@ -51,7 +51,7 @@ export const projectList = [
   {
     title: "Stellar Syntax Blog",
 
-    img: "/src/assets/blog-long.png",
+    img: "/blog-long.png",
 
     techStack: ["reactjs", "nodejs", "express.js", "monogodb"],
 
