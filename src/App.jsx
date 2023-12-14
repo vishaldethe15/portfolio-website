@@ -12,18 +12,9 @@ const App = () => {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route index element={<HomePage />} />
-        <Route
-          path="https://vishal-dethe.netlify.app/about"
-          element={<AboutPage />}
-        />
-        <Route
-          path="https://vishal-dethe.netlify.app/projects"
-          element={<ProjectsPage />}
-        />
-        <Route
-          path="https://vishal-dethe.netlify.app/contact"
-          element={<ContactPage />}
-        />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </AnimatePresence>
   );

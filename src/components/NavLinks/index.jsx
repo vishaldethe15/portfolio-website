@@ -38,7 +38,7 @@ const NavLinks = ({ data }) => {
 export const NavItem = ({ url, title }) => {
   return (
     <motion.li>
-      <NavLink className="link" to={`https://vishal-dethe.netlify.app/${url}`}>
+      <NavLink className="link" to={`/${url}`}>
         {title}
       </NavLink>
     </motion.li>
