@@ -38,17 +38,6 @@ export const socialLinks = [
 
 export const projectList = [
   {
-    title: "Gears Store",
-
-    img: "/store-long.png",
-
-    techStack: ["reactjs", "nodejs", "express.js", "monogodb", "auth"],
-
-    desc: "Gears is a dedicated gaming gear e-commerce platform, offering robust user authentication and authorization capabilities. Additionally, platform ensures secure payments through integrated payment gateway functionality.",
-
-    links: { github: "https://github.com/", liveSite: "https://github.com/" },
-  },
-  {
     title: "Stellar Syntax Blog",
 
     img: "/blog-long.png",
@@ -56,6 +45,17 @@ export const projectList = [
     techStack: ["reactjs", "nodejs", "express.js", "monogodb"],
 
     desc: "Stellar Syntax represents my personal blog website, a comprehensive full-stack blog application where I share articles on topics ranging from space exploration to programming.",
+
+    links: { github: "https://github.com/", liveSite: "https://github.com/" },
+  },
+  {
+    title: "Gears Store",
+
+    img: "/store-long.png",
+
+    techStack: ["reactjs", "nodejs", "express.js", "monogodb", "auth"],
+
+    desc: "Gears is a dedicated gaming gear e-commerce platform, offering robust user authentication and authorization capabilities. Additionally, platform ensures secure payments through integrated payment gateway functionality.",
 
     links: { github: "https://github.com/", liveSite: "https://github.com/" },
   },
