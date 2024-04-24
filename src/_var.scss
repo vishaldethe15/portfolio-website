@@ -21,6 +21,22 @@ $z-index: 10;
 $transition: ease-in-out 0.2s;
 $spacing: 0.5rem;
 
+$bg-img: repeating-linear-gradient(
+    0deg,
+    rgb(17, 17, 17) 0px,
+    rgb(17, 17, 17) 1px,
+    transparent 1px,
+    transparent 60px
+  ),
+  repeating-linear-gradient(
+    90deg,
+    rgb(17, 17, 17) 0px,
+    rgb(17, 17, 17) 1px,
+    transparent 1px,
+    transparent 60px
+  ),
+  linear-gradient(90deg, hsl(49, 0%, 3%), hsl(49, 0%, 3%));
+
 // mixins
 
 @mixin layout-flex($dir: row, $jus) {
