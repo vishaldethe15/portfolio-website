@@ -9,7 +9,7 @@ const FlexWrapper = ({ children }) => {
     <div className="flex-wrapper">
       <NavLinks data={navLinks} />
       {children}
-      <SocialLinks data={socialLinks} />
+      {/* <SocialLinks data={socialLinks} /> */}
     </div>
   );
 };
